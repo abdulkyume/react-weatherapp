@@ -12,7 +12,7 @@ function App() {
     const city = e.target.elements["city"].value;
     const country = e.target.elements["country"].value;
     var API_URL = await fetch(
-      `http://api.openweathermap.org/data/2.5/forecast?q=${city},${country}id=524901&appid=${API_KEY}`
+      `https://api.openweathermap.org/data/2.5/forecast?q=${city},${country}id=524901&appid=${API_KEY}`
     );
     var data = await API_URL.json();
 
